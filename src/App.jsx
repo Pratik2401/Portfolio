@@ -12,6 +12,7 @@ import Contact from './Contact';
 import MouseTrail from '@pjsalita/react-mouse-trail';
 
 function App() {
+  
   const pathname = window.location.pathname;
   console.log(pathname);
   const config = {
