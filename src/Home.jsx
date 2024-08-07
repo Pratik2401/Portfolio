@@ -8,6 +8,8 @@ import Typed from "typed.js";
 import "./font.css";
 import "./Home.css";
 
+import Button from 'react-bootstrap/Button';
+
 export default function Home() {
   const typedRef = useRef(null);
 
@@ -162,6 +164,8 @@ const handleLeetCodeClick = () => {
               </svg>
             </div>
           </div>
+          <Button variant="primary"  href="./my_cv/My_CV.pdf" download="Pratik_Mali-CV" target="_blank" className=' cv_btn'><strong>Download CV</strong></Button>
+
         </Col>
         <Col md={6} className="text-center">
           <Image
@@ -171,6 +175,7 @@ const handleLeetCodeClick = () => {
           />
         </Col>
       </Row>
+        
     </Container>
   );
 }

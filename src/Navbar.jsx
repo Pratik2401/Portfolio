@@ -45,7 +45,7 @@ const CustomNavbar = () => {
           Education
         </Nav.Link>
         <Nav.Link onClick={() => handleScrollTo('skills')}>
-          My Skills
+          MySkills
         </Nav.Link>
         <Nav.Link onClick={() => handleScrollTo('projects')}>
           Projects
@@ -55,6 +55,9 @@ const CustomNavbar = () => {
         </Nav.Link>
         <Nav.Link onClick={() => handleScrollTo('about')}>
           About
+        </Nav.Link>
+        <Nav.Link onClick={() => handleScrollTo('contact')}>
+          Contact
         </Nav.Link>
       </Nav>
     </Navbar.Collapse>

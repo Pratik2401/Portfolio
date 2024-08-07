@@ -70,7 +70,7 @@ const MyWork = () => {
     <Row>
       {certification.map((skill, index) => (
         <Col key={index} md={4} className="mb-4">
-          <Card style={{ width: '18rem', height: '30rem', position: 'relative'}} className='certificates_card'>
+          <Card style={{ width: '18rem', height: '30rem', position: 'relative'}} className='certificates_card d-flex justify-content-center'>
             <Card.Img variant="top" src={skill.image} className="card-img-top container certificates_card_img" />
             <Card.Body>
               <Card.Title>{skill.heading}</Card.Title>

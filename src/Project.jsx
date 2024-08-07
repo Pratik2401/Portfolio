@@ -32,7 +32,7 @@ export default function Project() {
     {
       image: Spot,
       heading: 'Spot Seekers',
-      description: 'Developed using ReactJS, XML, useEffect, serial communication, useState, and Bootstrap, this project accepts sensor values through XML and updates them on the website in real-time. It showcases a robust IoT solution for smart parking.',
+      description: 'Developed using ReactJS, XML, useEffect, serial communication, useState, and Bootstrap, this project accepts sensor values through XML and updates them on the website in real-time. It showcases a robust IoT solution for smart parking.UserName:admin Password:admin',
       link: "https://projectparking.netlify.app/",
       tags: 'completed',
     },
@@ -68,14 +68,14 @@ export default function Project() {
       image: News,
       heading: 'News APP',
       description: 'Created using ReactJS and REST API for fetching news, this application uses createContext and useContext for state management. It delivers the latest news updates with a clean and readable layout, ensuring users stay informed.',
-      link: "https://pratik2401.github.io/TO-DO-List/",
+      link: "https://github.com/Pratik2401/News",
       tags: 'completed',
     },
     {
       image: Text,
       heading: 'Text Editor',
       description: 'Designed and implemented using Arduino, this project showcases innovative hardware design and development for embedded systems. It features basic text editing functionalities with a straightforward interface.',
-      link: "https://pratik2401.github.io/TO-DO-List/",
+      link: "https://github.com/Pratik2401/Text_Editor",
       tags: 'completed',
     },
     
@@ -110,8 +110,8 @@ export default function Project() {
         <Row>
           <div className="sub_heading">FrontEnd Projects</div>
           {front_end_projects.map((project, index) => (
-            <Col key={index} md={4} className="mb-4">
-              <Card className='project_cards' style={{ width: '18rem', height: '29rem', position: 'relative' }}>
+            <Col key={index} md={4} className="mb-4 d-flex justify-content-center">
+              <Card className='project_cards' style={{ width: '18rem', height: '30rem', position: 'relative' }}>
                 <Card.Img variant="top" src={project.image} className="card-img-top project_images" />
                 <Card.Body>
                   <Card.Title>{project.heading}</Card.Title>
@@ -128,7 +128,7 @@ export default function Project() {
 
         <div className="sub_heading">Coding Projects</div>
           {program_project.map((project, index) => (
-            <Col key={index} md={4} className="mb-4">
+            <Col key={index} md={4} className="mb-4 d-flex justify-content-center">
               <Card className='project_cards' style={{ width: '18rem', height: '29rem', position: 'relative' }}>
                 <Card.Img variant="top" src={project.image} className="card-img-top project_images" />
                 <Card.Body>

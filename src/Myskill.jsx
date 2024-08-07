@@ -19,15 +19,13 @@ import Bootstrap from './assets/images/bootstrap.png';
 import C from './assets/images/C.png';
 import Cpp from './assets/images/Cpp.png';
 import Python from './assets/images/python.png';
-
-
-
+import Expressjs from './assets/images/express-js.png';
 import Nodejs from './assets/images/nodejs.png';
 import MachineLearning from './assets/images/machinlearning.png';
 import Datasci from './assets/images/datasci.png';
 
-import './Myskill.css';
 
+import './Myskill.css';
 const skills = [
   {
     image: Arduino,
@@ -123,7 +121,13 @@ const skills = [
     image: Nodejs,
     heading: 'Node.js',
     description: 'Learning to build scalable network applications using Node.js, leveraging its event-driven architecture.',
-    status: 'ongoing',
+    status: 'completed',
+  },
+  {
+    "image": Expressjs,
+    "heading": "Express js",
+    "description": "Building scalable network applications with Node.js using Express.js.",
+    "status": "completed"
   },
   {
     image: MachineLearning,
@@ -152,7 +156,7 @@ const MyWork = () => {
 
       <Row>
         {skills.map((skill, index) => (
-          <Col key={index} md={4} className="mb-4">
+          <Col key={index} md={4} className="mb-4 d-flex justify-content-center">
             <Card className={skill.status === 'completed' ? 'completed-card' : 'ongoing-card'} style={{ width: '18rem', height: '18rem', position: 'relative' }}>
               {skill.status === 'ongoing' && (
                 <div className="ribbon-wrapper">
@@ -163,7 +167,6 @@ const MyWork = () => {
               <Card.Body>
                 <Card.Title>{skill.heading}</Card.Title>
                 <Card.Text>{skill.description}</Card.Text>
-                {/* <Button variant="primary">Learn more</Button> */}
               </Card.Body>
             </Card>
           </Col>

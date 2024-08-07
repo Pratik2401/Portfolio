@@ -19,7 +19,6 @@ export default function About() {
           fontWeight: "bolder",
           color: "white",
           fontSize: "2rem",
-          
         }}
       >
         Get to Know <span className="home_name"> Pratik Mali</span>

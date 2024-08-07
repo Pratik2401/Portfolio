@@ -2,7 +2,7 @@ import React from 'react'
 import './Education.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Col } from 'react-bootstrap';
+
 
 export default function Education() {
   return (
@@ -12,7 +12,7 @@ export default function Education() {
     fontFamily: 'cocogoose',
     fontWeight: 'bolder',
     color: 'white',
-    fontSize: '2rem'
+    fontSize: '2rem',
 }}>Education</div>
       <VerticalTimeline lineColor="#cd0ff9">
       <VerticalTimelineElement className="vertical-timeline-element--work positions" date="2015 - 2020">
