@@ -13,7 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pjsalita/react-mouse-trail": "github:pjsalita/react-mouse-trail",
     "@stichiboi/react-elegant-mouse-trail": "^1.0.1",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
