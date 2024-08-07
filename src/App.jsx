@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import './App.css';
 import Admin from './Admin';
@@ -12,9 +13,6 @@ import Contact from './Contact';
 import MouseTrail from '@pjsalita/react-mouse-trail';
 
 function App() {
-  
-  const pathname = window.location.pathname;
-  console.log(pathname);
   const config = {
     color: '#cd0ff9',
     idleAnimation: false,
@@ -25,13 +23,12 @@ function App() {
   };
 
   return (
-    <>
-      {pathname === '/Portfolio/admin' ? (
-        <Admin />
-      ) : (
+    <Router>
+      <MouseTrail {...config} />
+      <Navbar />
+      <Route path="/Portfolio/admin" component={Admin} />
+      <Route path="/" exact>
         <>
-          <MouseTrail {...config} />
-          <Navbar />
           <Home />
           <Education />
           <Myskill />
@@ -40,8 +37,8 @@ function App() {
           <About />
           <Contact />
         </>
-      )}
-    </>
+      </Route>
+    </Router>
   );
 }
 
